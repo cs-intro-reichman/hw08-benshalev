@@ -129,7 +129,7 @@ class PlayList {
         return ;
     }
     tracks[i] = null;
-    for(int j = i; j <= size ; j++){
+    for(int j = i; j < size ; j++){
         tracks[j] = tracks[j + 1];
     }
     tracks[size] = null;
