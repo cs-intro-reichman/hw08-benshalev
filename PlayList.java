@@ -172,11 +172,11 @@ class PlayList {
      *  minimum value (5) when starting the search from index 2.  
      *  If start is negative or greater than size - 1, returns -1.
      */
-    private int minIndex(int start) {
+    public int minIndex(int start) {
         //// replace the following statement with your code
         int minchek = tracks[start].getDuration();
         int tempchek = -1; 
-        int loc = 0;
+        int loc = start;
         if(start < 0 || start >= size){
             return tempchek;
         }
