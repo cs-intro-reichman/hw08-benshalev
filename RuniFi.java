@@ -62,7 +62,9 @@ class RuniFi {
 
         // Tests the ability to find the track with the shortest duration
         System.out.println("\nThe shortest track in my list is " + myList.titleOfShortestTrack());
-
+        System.out.println("\nThe shortest track in my list is " + String.valueOf(myList.minIndex(0)));
+        System.out.println("\nThe shortest track in my list is " + String.valueOf(myList.minIndex(1)));
+        System.out.println("\nThe shortest track in my list is " + String.valueOf(myList.minIndex(4)));
         // Sorts the list 
         myList.sortedInPlace();
         display("My list after sorting by increasing duration", myList);
